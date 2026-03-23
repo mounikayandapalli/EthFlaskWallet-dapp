@@ -1,5 +1,18 @@
 # EthFlaskWallet
 
+#STUDENT DETAILS
+Name: Y.Mounika
+Roll No: 323103210260
+Course:CSE
+
+Name: V.Greeshma
+Roll No: 323103210226
+Course:CSE
+
+Name: Sk.Ayesha
+Roll No: 323103210206
+Course:CSE
+
 A simple **blockchain web application** built with **Flask** and integrated with **MetaMask**.  
 This app allows users to connect their MetaMask wallet, select a sender account, and send ETH transactions. It also includes a simple Python blockchain backend to track transactions in blocks.
 
@@ -18,7 +31,10 @@ This app allows users to connect their MetaMask wallet, select a sender account,
 - MetaMask browser extension  
 - Ganache (local Ethereum test network)  
 
-```bash
+# How to Run
 pip install -r requirements.txt
 python app.py
 http://127.0.0.1:5000
+
+# Author
+Y.Mounika
