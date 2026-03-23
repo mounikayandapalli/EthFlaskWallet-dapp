@@ -10,10 +10,6 @@ Name: V. Greeshma
 Roll No: 323103210226  
 Course: CSE  
 
-Name:Sk. Ayesha  
-Roll No: 323103210206  
-Course: CSE
-
 A simple **blockchain web application** built with **Flask** and integrated with **MetaMask**.  
 This app allows users to connect their MetaMask wallet, select a sender account, and send ETH transactions. It also includes a simple Python blockchain backend to track transactions in blocks.
 
