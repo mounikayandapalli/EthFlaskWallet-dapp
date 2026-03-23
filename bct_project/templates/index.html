@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flask Blockchain + MetaMask</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #00c6ff, #0072ff);
+            color: white;
+            text-align: center;
+            padding: 50px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 40px;
+            text-shadow: 2px 2px 5px #000;
+        }
+
+        button {
+            background-color: #ff9800;
+            border: none;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            margin: 10px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #e68900;
+            transform: scale(1.05);
+        }
+
+        input, select {
+            padding: 10px;
+            font-size: 1em;
+            border-radius: 5px;
+            border: none;
+            margin: 10px;
+            width: 250px;
+            text-align: center;
+        }
+
+        #status {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        /* Logout button */
+        .logout-button {
+            background-color: #f44336;
+        }
+
+        .logout-button:hover {
+            background-color: #d32f2f;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flask Blockchain & MetaMask</h1>
+
+    <!-- Connect MetaMask & Logout -->
+    <button onclick="connectMetaMask()">Connect MetaMask</button>
+    <form action="/logout" method="GET" style="display:inline;">
+        <button type="submit" class="logout-button">Logout</button>
+    </form>
+    <br>
+
+    <!-- Sender Account Dropdown -->
+    <select id="sender">
+        <option value="">Connect MetaMask to see accounts</option>
+    </select>
+    <br>
+
+    <!-- Recipient and Amount -->
+    <input type="text" id="recipient" placeholder="Recipient Address"><br>
+    <input type="number" id="amount" placeholder="Amount in ETH" step="0.01"><br>
+
+    <!-- Send ETH Button -->
+    <button onclick="sendTransaction()">Send ETH</button>
+
+    <!-- Status -->
+    <div id="status"></div>
+
+    <!-- JS -->
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+</body>
+</html>
